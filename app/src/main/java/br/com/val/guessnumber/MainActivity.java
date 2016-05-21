@@ -17,17 +17,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGame(View v) {
-        String msg=getString(R.string.inf_name_requerid);
+        String msg=getString(R.string.inf_name_required);
         EditText text=(EditText) findViewById(R.id.editTextName);
         String name=text.getText().toString();
         if(name.equals("")){
             Toast toast = Toast.makeText(this,msg ,Toast.LENGTH_SHORT);
             toast.show();
         }else{
-            Intent intent = new Intent(this, GuessNumber.class);
+            Intent intent = new Intent(this, GuessNumberActivity.class);
             intent.putExtra(NAME_USER, name);
             startActivity(intent);
         }
 
+    }
+
+    public void showRecord(View view){
+        Intent intent=new Intent(this,RecordActivity.class);
+        startActivity(intent);
     }
 }
