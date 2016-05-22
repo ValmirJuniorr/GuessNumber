@@ -10,19 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/type_a_number"
-        android:id="@+id/textView2" />
+        android:id="@+id/textViewTypeNumber"
+        android:textSize="28sp"/>
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editTextNumberEntered"/>
+        android:id="@+id/editTextNumberEntered"
+        android:textSize="28sp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/try_your_luck"
         android:id="@+id/button2"
-        android:onClick="tryLuck"/>
+        android:onClick="tryLuck"
+        android:textSize="28sp"/>
 </LinearLayout>

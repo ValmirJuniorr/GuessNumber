@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText text=(EditText) findViewById(R.id.editTextName);
         String name=text.getText().toString();
         if(name.equals("")){
-            Toast toast = Toast.makeText(this,msg ,Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this,msg ,Toast.LENGTH_LONG);
             toast.show();
         }else{
             Intent intent = new Intent(this, GuessNumberActivity.class);
@@ -35,4 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,RecordActivity.class);
         startActivity(intent);
     }
+
+
 }

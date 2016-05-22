@@ -7,4 +7,5 @@
     <string name="type_a_number">Digite um numero</string>
     <string name="try_your_luck">Tente a sorte</string>
     <string name="show_records">Ver records</string>
+    <string name="title_activity_record_list">RecordListActivity</string>
 </resources>
